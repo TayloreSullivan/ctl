@@ -1,0 +1,80 @@
+Title: Indigency "Flowchart"
+Author: [your name]
+Before: <link rel="stylesheet" type="text/css" href="https://suffolklitlab.org/howto/qna/style/style.css">
+<div id="icon" style="background-size: 110px 99px;background-image: url('https://suffolklitlab.org/howto/qna/images/maxheadroom.gif');"></div>
+<h2 style="text-align:center;">Indigency "Flowchart"</h2>
+<p><b>This is a <a href="https://www.codingthelaw.org/level/2/#mission_p1">class project</a>. You should not rely on it as a source of legal information!</b></p>
+<p>Answer the following questions to see if you qualify for appointed counsel in [insert state name].</p>
+
+Q(1): How many people are in your household?
+A: 1
+	Q(1.1):GOTO:2
+A: 2
+	Q(1.2):GOTO:3
+A: 3
+	Q(1.3):GOTO:4
+A: 4
+	Q(1.4):GOTO:5
+A: 5
+	Q(1.5):GOTO:6
+A: 6
+	Q(1.6):GOTO:7
+Q(2): Including public benefits, is your household income at or below $15,521.11?
+A: Yes
+	Q(2.1):GOTO:9
+A: No
+	Q(2.2):GOTO:8
+Q(3): Including public benefits, is your household income at or below $20,920.90?
+A: Yes
+	Q(3.1):GOTO:9
+A: No
+	Q(3.2):GOTO:8
+Q(4): Including public benefits, is your household income at or below $26,320.70?
+A: Yes
+	Q(4.1):GOTO:9
+A: No
+	Q(4.2):GOTO:8
+Q(5): Including public benefits, is your household income at or below $31,720.50?
+A: Yes
+	Q(5.1):GOTO:9
+A: No
+	Q(5.2):GOTO:8
+Q(6): Including public benefits, is your household income at or below $37,120.30?
+A: Yes
+	Q(6.1):GOTO:9
+A: No
+	Q(6.2):GOTO:8
+Q(7): Including public benefits, is your household income at or below $42,520.10?
+A: Yes
+	Q(7.1):GOTO:9
+A: No
+	Q(7.2):GOTO:8
+Q(8): Ineligible to receive assigned counsel.
+Q(9): Would hiring private counsel cause you substantial hardship?
+A: Yes
+	Q(9.1):GOTO:10
+A: No
+	Q(9.2):GOTO:8
+Q(10): Are you pleading guilty to 1 or more misdemeanors?
+A: Yes and there is nothing more I am pleading guilty to.
+	Q(10.1):GOTO:15
+A: Yes and I am also pleading guilty to 1 or more felonies.
+	Q(10.2):GOTO:13
+A: No
+	Q(10.3):GOTO:11
+Q(11): Are you pleading guilty to 1 or more felonies?
+A: Yes
+	Q(11.1):GOTO:16
+A: No
+	Q(11.2):GOTO:12
+Q(12): Is your case going to trial?
+A: Yes
+	Q(12.1):GOTO:17
+A: No	
+	Q(12.2):GOTO:18
+Q(13): Eligible for assigned counsel. The court will decide whether you should pay $250 for the cost of misdemeanor counsel and/or $800 for the cost of felony counsel.
+Q(14): Ineligible for assigned counsel.
+Q(15): Eligible for assigned counsel. The court will decide whether you should pay $250 for cost of counsel.
+Q(16): Eligible for assigned counsel. The court will decide whether you should pay $800 for cost of counsel. 
+Q(17): You are eligible for assistance but may need to pay the costs incurred by the office of state public defender for providing counsel in the criminal trial.
+Q(18): You are eligible for assistance when needed but for now it seems as though assistance is not needed. 
