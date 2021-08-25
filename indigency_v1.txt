@@ -1,0 +1,41 @@
+Title: Indigency "Flowchart"
+Author: [your name]
+Before: <link rel="stylesheet" type="text/css" href="https://suffolklitlab.org/howto/qna/style/style.css">
+<div id="icon" style="background-size: 110px 99px;background-image: url('https://suffolklitlab.org/howto/qna/images/maxheadroom.gif');"></div>
+<h2 style="text-align:center;">Indigency "Flowchart"</h2>
+<p><b>This is a <a href="https://www.codingthelaw.org/level/2/#mission_p1">class project</a>. You should not rely on it as a source of legal information!</b></p>
+<p>Answer the following questions to see if you qualify for appointed counsel in [insert state name].</p>
+
+Q(1): Would hiring competent private counsel cause you or your household substantial hardship?
+A: Yes
+	Q(1.1):GOTO:2
+A: No
+	Q(1.2):GOTO:7
+Q(2): Including public benefits toward the total income, is your gross household income at or less than 133% of the Federal Poverty Guidelines?
+A: Yes
+	Q(2.1):GOTO:3
+A: No
+	Q(2.2):GOTO:7
+Q(3): Are you pleading guilty to 1 or more misdemeanors?
+A: Yes and there is nothing more I am pleading guilty to.
+	Q(3.1):GOTO:8
+A: Yes and I am also pleading guilty to 1 or more felonies.
+	Q(3.2):GOTO:6
+A: No
+	Q(3.3):GOTO:4
+Q(4): Are you pleading guilty to 1 or more felonies?
+A: Yes
+	Q(4.1):GOTO:9
+A: No
+	Q(4.2):GOTO:5
+Q(5): Is your case going to trial?
+A: Yes
+	Q(5.1):GOTO:10
+A: No	
+	Q(5.2):GOTO:11
+Q(6): Eligible for assigned counsel. The court will decide whether you should pay $250 for the cost of misdemeanor counsel and/or $800 for the cost of felony counsel.
+Q(7): Ineligible for assigned counsel.
+Q(8): Eligible for assigned counsel. The court will decide whether you should pay $250 for cost of counsel.
+Q(9): Eligible for assigned counsel. The court will decide whether you should pay $800 for cost of counsel. 
+Q(10): You are eligible for assistance but may need to pay the costs incurred by the office of state public defender for providing counsel in the criminal trial.
+Q(11): You are eligible for assistance when needed but for now it seems as though assistance is not needed. 
