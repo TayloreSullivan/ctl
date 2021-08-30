@@ -1,0 +1,52 @@
+Title: Montana Indigency Calculator
+Author: David Colarusso
+Before: <link rel="stylesheet" type="text/css" href="https://suffolklitlab.org/howto/qna/style/style.css">
+<div id="icon" style="background-size: 110px 99px;background-image: url('https://suffolklitlab.org/howto/qna/images/maxheadroom.gif');"></div>
+<h2 style="text-align:center;">Montana Indigency Calculator</h2>
+<p><b>This is a <a href="https://www.codingthelaw.org/level/2/#mission_p2">class project</a>. You should not rely on it as a source of legal information. It is likely incomplete.</b></p>
+<p>Answer the following questions to see if you qualify for an appointment of counsel or fee waiver.</p>
+After:
+<script>
+function fedpov(house,income,percentage){
+	// Determines if your income is less than or equal to
+	// a percentage of the 2021 federal poverty guidelines
+	// for the contiguous United States. See
+	// https://aspe.hhs.gov/poverty-guidelines
+
+		var line = NaN;
+
+		if (house == 1) {
+			line = 12880;
+		} else if (house == 2) {
+			line = 17420;
+		} else if (house == 3) {
+			line = 21960;
+		} else if (house == 4) {
+			line = 26500;
+		} else if (house == 5) {
+			line = 31040;
+		} else if (house == 6) {
+			line = 35580;
+		} else if (house == 7) {
+			line = 40120;
+		} else if (house == 8) {
+			line = 44660;
+		} else if (house > 8) {
+			line = 44660 + (house-8)*4540;
+		}
+
+		if (income <= (line*(percentage/100))) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+</script>
+
+Q(house): How many people are in your household?
+X:number
+	Q(income): Including any and all Public Benefits, how much income does your household bring in per year in after tax dollars?
+	X[javascript:if (fedpov(getvar('house'),getvar('income'),133)){ goto('indigent') } else { goto('noqual') } ]:number
+Q(indigent): You probably qualify as indigent since you earn less than 133% of the poverty line. 
+
+Q(noqual): You likely will not qualify as indigent because your household income is above 133% of the poverty line.
