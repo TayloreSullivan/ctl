@@ -1,0 +1,17 @@
+Title: Montana Indigency Calculator
+Author: David Colarusso
+Before: <link rel="stylesheet" type="text/css" href="https://suffolklitlab.org/howto/qna/style/style.css">
+<div id="icon" style="background-size: 110px 99px;background-image: url('https://suffolklitlab.org/howto/qna/images/maxheadroom.gif');"></div>
+<h2 style="text-align:center;">Montana Indigency Calculator</h2>
+<p><b>This is a <a href="https://www.codingthelaw.org/level/2/#mission_p2">class project</a>. You should not rely on it as a source of legal information. It is likely incomplete.</b></p>
+<p>Answer the following questions to see if you qualify for an appointment of counsel or fee waiver.</p>
+After:
+<script src="https://tayloresullivan.github.io/ctl/functions.js"></script>
+
+Q(house): How many people are in your household?
+X:number
+	Q(income): Including any and all Public Benefits, how much income does your household bring in per year in after tax dollars?
+	X[javascript:if (fedpov(getvar('house'),getvar('income'),133)){ goto('indigent') } else { goto('noqual') } ]:number
+Q(indigent): You probably qualify as indigent since you earn less than 133% of the poverty line. 
+
+Q(noqual): You likely will not qualify as indigent because your household income is above 133% of the poverty line.
